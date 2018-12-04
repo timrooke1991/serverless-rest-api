@@ -1,11 +1,12 @@
 'use strict';
 
-module.exports.hello = async (event, context) => {
+module.exports.read = async (event, context) => {
+  const message = 'You have hit the get route';
   return {
     statusCode: 200,
     body: JSON.stringify({
       message: 'Go Serverless v1.0! Your function executed successfully!',
-      input: event
+      input: message
     })
   };
 
