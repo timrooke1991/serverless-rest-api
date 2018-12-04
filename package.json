@@ -1,0 +1,23 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "description": "Aim to do this before end of year",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timrooke1991/serverless-rest-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timrooke1991/serverless-rest-api/issues"
+  },
+  "homepage": "https://github.com/timrooke1991/serverless-rest-api#readme",
+  "devDependencies": {
+    "serverless-offline": "^3.31.3"
+  }
+}
