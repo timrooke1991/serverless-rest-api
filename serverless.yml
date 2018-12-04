@@ -57,12 +57,19 @@ provider:
 #    - exclude-me-dir/**
 
 functions:
-  read:
-    handler: features/read.read
+  getTodo:
+    handler: features/read.getTodo
     events:
       - http:
-          path: 'first_get'
+          path: 'to_do'
           method: get
+
+  createTodo:
+    handler: features/create.createTodo
+    events:
+      - http:
+          path: 'to_do'
+          method: post
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
