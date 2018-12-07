@@ -22,10 +22,8 @@ plugins:
 provider:
   name: aws
   runtime: nodejs8.10
-
-# you can overwrite defaults here
-#  stage: dev
-#  region: us-east-1
+  stage: dev
+  region: us-west-1
 
 # you can add statements to the Lambda function's IAM Role here
 #  iamRoleStatements:
@@ -48,11 +46,11 @@ provider:
 #    variable1: value1
 
 # you can add packaging information here
-#package:
-#  include:
-#    - include-me.js
-#    - include-me-dir/**
-#  exclude:
+package:
+ include:
+   - models/**
+   - features/**
+ exclude:
 #    - exclude-me.js
 #    - exclude-me-dir/**
 
