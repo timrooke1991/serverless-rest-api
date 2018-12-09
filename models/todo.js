@@ -1,33 +1,33 @@
 module.exports = (sequelize, DataTypes) => {
   return sequelize.define('todo', {
     id: {
-      DataTypes.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
       autoIncrement: true,
       primaryKey: true
     },
     task: {
-      DataTypes.STRING
+      type: DataTypes.STRING
     },
     completed: {
-      DataTypes.BOOLEAN,
+      type: DataTypes.BOOLEAN,
       defaultValue: false
     },
     created_at: {
-      DataTypes.DATE,
+      type: DataTypes.DATE,
       defaultValue: new Date(),
       allowNull: false
     },
     updated_at: {
-      DataTypes.DATE,
+      type: DataTypes.DATE,
       defaultValue: new Date(),
       allowNull: false
     },
     deleted_at: {
-      DataTypes.DATE
+      type: DataTypes.DATE
     }
   }, {
     paranoid: true,
-    underscored: true,
+    underscored: true
   });
 };
