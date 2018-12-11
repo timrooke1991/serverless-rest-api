@@ -1,4 +1,4 @@
 # serverless-rest-api
 
 - Aim to do this before end of year
-- Use Amazon RDS; ElephantSQL now paid
+- RDS connection issue currently preventing me from continuing 
